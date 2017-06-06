@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="main.css" type="text/css" rel="stylesheet">
+<title>登陆界面</title>
+</head>
+<style>
+	body{
+		
+	}
+#img
+{  
+	top: 0;
+	left:0;
+    width:100%; 
+	height:100%; 
+	z-index:-100;
+background-size:cover;
+}
+
+.login_btn{
+	width:300px;
+	margin:10px auto 0 auto;
+	border-radius: 0,5px,5px,0;
+	z-index: 100;
+}
+
+ .login_btn input{
+	width:90%;
+	margin:left;
+	margin-top: 20px;
+	padding:.5em 0;
+	-webkit-border-radius:.3em;
+	-moz-border-radius: .3em;
+	border:#1263be solid 1px;
+	background:#1b85fd;
+	color:#00000;
+	font-size:17px;
+	font-weight:bolder;
+	letter-spacing:1em;
+    border-radius: 5px;
+    opacity: 0.6;
+	 z-index: 100;
+}
+
+.login_btn input:hover{
+	background:green;
+	z-index: 100;
+	}
+	
+	
+.login_text input{
+	width:100%;
+	margin:left;
+	padding:.5em 0;
+	-webkit-border-radius:.3em;
+	-moz-border-radius: .3em;
+	border:#1263be solid 1px;
+	color:#000000;
+	font-size:17px;
+	font-weight:bolder;
+	letter-spacing:1em;
+    border-radius: 5px;
+	z-index: 100;
+	}
+ font{
+		font-family: "幼圆";
+		shape-margin: 5px;
+	    color:#FFFF33;
+	    font-weight:900;
+	 z-index: 100;
+	}
+	.div-bor{
+	    margin: 10px auto;
+		width: 200px;
+		border-radius: 0,5px,5px,0;
+	    border: medium;
+	    border: #1A2BE4;
+		opacity: 0.6;
+		z-index: 100;
+}
+	.div-bor1{
+	    margin: 10px auto;
+		width: 200px;
+		border-radius: 0,5px,5px,0;
+		opacity: 0.6;
+		z-index: 100;
+}
+	.div-bor2{
+	    margin: 10px auto;
+		width: 200px;
+		border-radius: 0,5px,5px,0;
+		opacity:0.6;
+		z-index: 100;
+}
+.icon-user{
+position: absolute;left: 0；z-index:5;
+background-image: url(lock.png); /*引入图片图片*/
+background-repeat: no-repeat; /*设置图片不重复*/
+background-position: 0px 0px; /*图片显示的位置*/
+width: 38px; /*设置图片显示的宽*/
+height: 38px; /*图片显示的高*/
+
+}
+	.icon-u2{
+		position: absolute;left: 0；z-index:5;
+background-image: url(login.png); /*引入图片图片*/
+background-repeat: no-repeat; /*设置图片不重复*/
+background-position: 0px 0px; /*图片显示的位置*/
+width: 38px; /*设置图片显示的宽*/
+height: 38px; /*图片显示的高*/
+
+	}
+.user{
+padding-left: 45px;
+}
+	.text{
+	width:100%;
+	margin:left;
+	padding:.5em 0;
+	-webkit-border-radius:.3em;
+	-moz-border-radius: .3em;
+	border:#1263be solid 1px;
+	color:#000000;
+	font-size:17px;
+	font-weight:bolder;
+	letter-spacing:1em;
+    border-radius: 5px;
+	padding-left: 45px;
+	z-index: 100;
+	}
+	
+	.font{
+    margin: 0 auto;
+    margin-top: 200px;
+	color: rgba(255,252,252,1.00);
+	font-size: 50px;
+}
+	</style>
+<body align="center" background="321.gif" >
+<table align="center"  style="margin:300px 300px 300px 300px; background-color:; height:250px; border:0; opacity:0.8"; radius=5px;>
+<tr>
+<th>	  
+<div clss="head">
+
+ <img src="321.gif" id="img"/>	
+</th>
+<div class="font">Enter your stoury</div>
+
+<div class="div-bor">
+	<i class="icon-user"></i>
+	<input type="text" class="text">
+</div>
+<div class="div-bor1" >
+	<i class="icon-u2"></i>
+	<input type="text"  class="text" >
+</div>
+<div class="div-bor2" >
+ <input type="submit" value="忘记密码？"></div> 
+
+            <div class="login_btn">
+            	<input type="submit" value="注册" onclick="javascript:window.location.href='注册.html'"> 
+    	        <input type="submit" value="登陆" onclick="javascript:window.location.href='主页面.html'"> 
+                </div>
+            </th></tr>
+        
+
+</table>
+</body>
+</html>

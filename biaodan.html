@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head><b><font size="10"> 注册表</font></b>
+<meta charset="utf-8">
+<title>表单</title>
+</head>
+
+<body>
+<form>
+   <table border="1" bordercolor="2E456E">
+   <tr><td width="600">
+    请填入你的名字<br>
+	 name:<br>
+	<input type="text" name="name" maxlength="5">
+<br></td></tr></table>
+	</form>
+	
+	<br><br>
+	<form>
+	<table border="1" bordercolor="#2E456E" >
+	<tr>
+	<td width="600">
+	
+    请填你的性别<br>
+    <input type="radio" name="sex" value="man" checked>man
+	<br>
+	<input type="radio" name="sex" value="woman" checked>woman
+	  </td>
+	  </tr></table>
+		</form>
+		
+<br><br>
+		<form>  <table border="1" bordercolor="2E456E">
+   <tr><td width="600">
+  Birthday (month and year):
+  <input type="month" name="bdaymonth">
+ 
+			</tr></td></table>
+</form>
+<br><br>
+  <form>
+	  <table border="1" bordercolor="2E456E">
+   <tr><td width="600">
+	请填入你的学历<br>
+	<select name="graduation">
+		<option value="小学">小学</option>
+		<option  value="初中">初中</option>
+		<option value="高中">高中</option>
+		<option value="大学及以上">大学及以上</option>
+	   </select></tr></td></table></form>
+		<br><br>
+	 <form>
+	  <table border="1" bordercolor="2E456E">
+   <tr><td width="600">
+	请填入你的目前工作状态<br>
+	<input list="company" name="company">
+<datalist id="company">
+  <option value="国企">
+  <option value="私人企业">
+  <option value="外企">
+  <option value="公务员">
+  <option value="程序员">
+	   </datalist></tr></td></table>
+</form>
+<br><br>
+<form>
+<table border="1" bordercolor="2E456E">	  请填入你的婚姻状态<br>
+   <tr><td width="600">
+   <input type="radio" name="marry" value="已婚" checked>已婚
+   <input type="radio" name="marry" value="未婚" checked>未婚
+		  </tr></td></table>
+</form><br><br>
+<form>
+	<input type="button" onClick="alert('提交成功')">提交
+	<input type="button" onClick="alert('退出成功')">退出
+</form>
+</body>
+</html>

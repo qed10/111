@@ -1,0 +1,115 @@
+ 
+
+@charset "utf-8";
+/* CSS Document */
+
+body { 
+   text-align:center;  
+   color:#000;  
+  font-family:georgia, serif;  
+   font-size:120%;  
+   line-height:1.6; 
+   margin:0;  
+   padding:2em 2em 5em;  
+   background:rgb(253, 253, 253); 
+   margin:auto; 
+   max-width:33em; 
+  color:rgb(10, 10, 10); 
+ }  
+ 
+ 
+ 
+ @media (max-width:500px) { 
+   body {font-size:80%;} 
+   img {max-width:100% !important; height:auto !important; float:none !important;} 
+ } 
+ 
+
+ a {outline:none !important; font-weight:bold; text-decoration:none;} 
+ a:link {color:#c00;} 
+ a:visited {color:#606;} 
+ a:hover {color:#606;} 
+ a:active {color:#900; outline:none;} 
+ 
+section{
+	padding-top: 20px;
+      padding-left: 0px;
+}
+ 
+ h1 { 
+	 font-family: "方正姚体"," 方正舒体"," 华文仿宋"," 华文楷体"," 幼圆";
+  font-size:320%; 
+   line-height:1.35; 
+   font-style:normal; 
+   margin:1.5em 0 0.8em; 
+ } 
+
+ 
+ h3 { 
+	font-family: "方正姚体"," 方正舒体"," 华文仿宋"," 华文楷体"," 幼圆";
+   font-weight:normal; 
+  text-transform:uppercase; 
+   font-size:150%; 
+   letter-spacing:0.15em; 
+   margin:1.75em 0 0.8em; 
+ } 
+ 
+
+ 
+ 
+ nav{
+	 background-color: #d9e506;
+	width: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	 position:fixed;
+	 text-align: center;
+}
+nav ul{
+	display: block;
+	list-style: none;
+	text-align: center;
+   margin: 0px auto;
+	width: 980px;
+	
+}
+nav ul li{
+	float: left;
+	padding: 20px;
+}
+
+ ul, ol, dl { 
+   text-align:left; 
+ } 
+  
+ code {font-family:courier, monospace;} 
+ p > code {padding:0.25em; background:#eee;} 
+ pre {text-align:left; font-size:100%;} 
+ hr {height:0; color:#eee; border:1px solid #eee; margin:2em 0 1em;} 
+ 
+ 
+ .normal {font-weight:normal;} 
+ .quiet {color:#999;} 
+ .pull-left {float:left; margin:0.5em 2em 1em 0;} 
+ .pull-right {float:right; margin:0.5em 0 1em 2em;} 
+ 
+ 
+
+#ziti
+{
+  font-family: "幼圆","方正姚体"," 方正舒体"," 华文仿宋"," 华文楷体";
+}
+
+background-image{
+	opacity: 0.1;
+	filter: "alpha(opacity=50)";
+}
+
+#div.background{background-color: #34E590; padding: 20px;}
+#p.background{background-color: #34E590; padding: 20px; }
+img{
+    
+	float: right;
+}
+

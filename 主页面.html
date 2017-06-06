@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+<title>主页面</title>
+<script language="javascript">
+var index=0;
+var index1=0;
+var word;
+var word1;
+function type(){
+    var typePanel = document.getElementById("aa");
+    typePanel.innerText = word.substring(0,index++);
+    if(index % 3 == 0){
+		typePanel.className = "";
+    }
+	else if(index % 3 == 1){
+        typePanel.className = "saying";
+    }
+}
+	function type1(){
+    var typePanel1 = document.getElementById("bb");
+    typePanel1.innerText = word1.substring(0,index1++);
+    if(index1 % 3 == 0){
+		typePanel1.className = "";
+    }
+	else if(index1 % 3 == 1){
+        typePanel1.className = "saying";
+    }
+}
+window.onload=function(){
+    word=document.getElementById("w").innerHTML;
+    setInterval(type, 200);
+	word1=document.getElementById("s").innerHTML;
+    setInterval(type1, 200);
+}
+
+</script>
+<link rel="stylesheet" href="主页.css">
+
+</head>
+<style type="text/css">
+    body{max-width: 1000px;margin: 0 auto;}
+    #lunbo ul li{width:100%;list-style: none; height:250px;text-align: center;}
+    #lunbo ul li:not(:first-child){display: none;}
+	
+</style>
+<body><div id="lunbo">
+    <ul>
+        <li><img src="story1.jpg"></li>
+        <li><img src="story2.jpg"></li>
+        <li><img src="story3.jpg"></li>
+        <li><img src="story4.jpg"></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    //因为使用了document，所以js需要放在需要执行的代码下面生效才能生效
+    var li=document.getElementById('lunbo').getElementsByTagName("li");
+    var num=0;
+    var len=li.length;
+
+    setInterval(function(){
+        li[num].style.display="none";
+        num=++num==len?0:num;
+        li[num].style.display="inline-block";
+
+    },6000);//切换时间
+</script>
+
+<div id="wrap">
+<div id="text">
+<pre id="aa" class="saying"></pre>
+	<div style="display:none" id="w" >It's our love story.
+Here is a record of our dribs and drabs.
+Here are not only our stories,
+but also our own experiences.
+Nice to share it with you. </div>
+
+	</div>
+<div id="text2">
+<pre id="bb" class="saying"></pre>
+<div style="display:none" id="s" >and then
+
+  next
+
+ more...</div>	
+	</div></div>
+<nav>
+	<ul>
+	<div class="b"><li><a href="详细页.html"><img src="story5.jpg"><span>About our story</span></a></li></div>
+		<div class="c"><li><a href="详细页.html"><img src="11.jpg"><span>It's me</span></a></li>
+		<li><a href="详细页.html"><img src="22.jpg"><span>It's my wife</span></a></li></div>
+	</ul>
+</nav>
+</body>
+</html>
