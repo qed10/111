@@ -57,7 +57,7 @@ body
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
+    text-align: left;
 }
 .effect-container .img-style
 {
@@ -65,9 +65,10 @@ body
 }
 .effect-details
 {
-    font-family: 'Advent Pro', sans-serif;
-    font-size: 20px;
+    font-family:"幼圆";
+    font-size: 15px;
     color: #666;
+	text-align: left;
 }
 hr
 {
